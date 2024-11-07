@@ -1,0 +1,446 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+	 font-family: "Roboto", sans-serif !important;
+}
+
+.vehicle-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vehicle-item {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.vehicle-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.vehicle-item p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.vehicle-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.vehicle-item a:hover {
+    background-color: #005982;
+}
+
+.vehicle-single {
+    padding: 20px;
+}
+
+.vehicle-single img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.vehicle-single h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.vehicle-single p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.vehicle-description {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.top-heading {
+    background-color: #d1e7dd;
+    border-radius: 6px 6px 0 0;
+    border: 2px solid green;
+    color: green;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+   }
+   .gallery-btn {
+       position: absolute;
+       right: 20px;
+       bottom: 26px;
+       font-size: 12px;
+       background-color: #b1b1b18c;
+       border: 0;
+   }
+   .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+border-bottom: 1px solid;
+}
+.h-44 {
+height: 44px;
+}
+
+.btn-group-toggle .btn {
+ border-radius: 30px;
+ padding: 3px 8px;
+}
+
+.btn.active {
+ background-color: #000;
+ color: #fff;
+}
+
+.btn-group-toggle .btn:not(.active) {
+ background-color: #d3d3d3;
+ color: #000;
+}   
+.image-grid img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+#photo-video .nav-tabs .nav-link.active {
+   font-weight: 600;
+}
+#photo-video .nav-tabs .nav-link {
+   color: #000;
+}
+svg#right {
+   height: 32px;
+   width: 32px;
+   fill: #638754;
+   margin-left: 8px;
+}
+.icon-btn {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.filter-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.modal-body {
+    background-color: #3c484e;
+    color: white;
+}
+.modal-body label {
+    color: white;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+.content-box {
+  position: relative !important;
+}
+.content-box::before {
+    content: "";
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    position: absolute;
+    background-color: #fff;
+    width: 32px !important;
+    height: 101%;
+    right: -1px;
+}
+.card-body {
+ padding: 0 !important;
+}
+h2.prices {
+font-weight: bold;
+font-family: "Roboto", sans-serif;
+margin-right: 6px;
+
+}
+.custom-fields-container {
+    margin-top: 20px;
+}
+
+.custom-field-settings {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the list */
+#custom-field-list {
+    margin: 0;
+    padding: 0;
+}
+
+#custom-field-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.image-box.wp-post-image {
+    width: 100% !important;
+}
+
+/* Box styling for each custom field */
+.custom-field-box {
+    border: 1px solid #ddd; /* Light border */
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff; /* White background for a clean look */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect to make it more interactive */
+.custom-field-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+    border-color: #bbb; /* Darker border on hover */
+}
+
+/* Styling for field label (e.g., Model) */
+.custom-field-box strong {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Italic style for field type (e.g., select, multiselect) */
+.custom-field-box .field-type {
+    font-style: italic;
+    color: #777;
+    margin-left: 8px; /* Space between label and type */
+}
+
+/* Container for field details like Placeholder, Icon, etc. */
+.custom-field-box .field-details {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Styling each field detail (e.g., Placeholder, Icon) */
+.custom-field-box .field-details p {
+    margin: 5px 0;
+}
+
+/* Placeholder for the icon if needed */
+.custom-field-box .icon-placeholder {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+/* Edit button styling */
+.custom-field-box button.edit-field {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect on the Edit button */
+.custom-field-box button.edit-field:hover {
+    background-color: #0056b3;
+}
+
+.filter-container {
+    padding: 20px;
+}
+.filter-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.checkbox-label {
+    display: block;
+    margin-bottom: 10px;
+}
+.range-label {
+    font-weight: bold;
+}
+.range-slider {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 3px;
+}
+.filter-section {
+    margin-bottom: 20px;
+}
+.slider-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.checkbox-list {
+padding: 10px;
+height: 250px;
+background-color: #ffffff12;
+overflow-y: auto;
+}
+.region-check-box-list {
+background-color: #ffffff12;
+padding: 6px;
+}
+.min-max {
+color: #888;
+}
+.no-results-card {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.icon-box {
+    color: #e74c3c;
+    font-size: 48px;
+}
+
+.no-results-card h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+.no-results-card p {
+    font-size: 16px;
+}
+
+.no-results-card .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 767px) {
+    .modal-dialog {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+
+    .filter-container .row {
+        flex-direction: column;
+    }
+
+    .filter-section {
+        width: 100%;
+    }
+
+    .filter-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .checkbox-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        height: 150px !important;
+    }
+
+    .slider-wrapper .min-max {
+        font-size: 14px;
+    }
+
+    .range-slider {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .modal-footer button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .modal-footer button:last-child {
+        margin-bottom: 0;
+    }
+
+    .modal-header h5 {
+        font-size: 18px;
+    }
+
+    .modal-footer {
+        padding: 10px;
+    }
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .modal-xl {
+        max-width: 80%;
+    }
+
+    .filter-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .checkbox-list {
+        flex-direction: column;
+    }
+
+    .slider-wrapper .min-max {
+        font-size: 14px;
+    }
+
+    .range-slider {
+        margin-top: 5px;
+    }
+}
+
+/* Fine-tuning for larger mobile phones */
+@media (min-width: 576px) and (max-width: 767px) {
+    .modal-xl {
+        max-width: 90%;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+}
